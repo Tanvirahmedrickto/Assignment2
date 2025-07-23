@@ -1,0 +1,24 @@
+/* header related styles */
+
+.header-boss{
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-left: 150px;
+    margin-right: 150px;
+
+}
+.menu-manager LI{
+
+    list-style: none;
+    margin-right: 20px;
+    padding: 15px;
+}
+.menu-manager LI a{
+    text-decoration: none;
+}
+.menu-manager{
+    display: flex;
+    
+}
