@@ -1,8 +1,12 @@
 /*body-max-width*/
-.body-max-width{
+ .body-max-width{
 
-    max-width: 1440px;
-}
+        max-width: 1440px;
+        margin: 0 auto;
+           
+    }
+    
+
 
 /* SHARED STYLES   */
  
@@ -11,8 +15,7 @@
   font-optical-sizing: auto;
   font-weight: bold;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+  font-variation-settings:"wdth" 100;
 }
 
 .inter-font{
@@ -21,6 +24,16 @@
   font-weight: 400;
   font-style: normal;
 }
+.inter-font-2{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;}
+  .inter-font-3{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;}
 .orange-color{
     color: #E95A08;
 }
@@ -34,7 +47,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
-    margin-left: 150px;
+    margin-left: 150px; 
     margin-right: 150px;
 
 }
@@ -77,48 +90,265 @@ height: 24px;
  .banner-boss{
    display: flex;
    margin-top: 221px;
-  
    margin-right: 150px;
+   margin-left: 150px;
+   align-items: center;
+   justify-content: space-between;
+   
+
 
  }
-.banner-section-1{
-
-margin-left: 150px;
 
 
-
-
-}
  .banner-title{
 
     font-size: 65px;
     width: 517px;
     height: 89px;
-    
-    
+    flex: 1;
+    padding-right: 30px;
    
-    
-    
-   
- }
+}
  .banner-description{
 
     width: 570px;
     height: 108px;
-    position: absolute;
-    top: 93%;
     font-size: 22px;
     color: rgba(0, 0, 0, 0.5);
+    padding-top: 53px;
+
+    
+    
     
     
  }
 .banner-image{
-
+   
 width: 570px;
 height: 355px;
-margin-right: 150px;
-position: absolute;
-top: 55%;
+ 
+
+
+
 
 }
 
+/* main section related styles */
+
+.main-manager-1{
+    width: 1140px;
+    height: 138px;
+    margin-top: 220px;
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: center;
+}
+
+.main-title{
+
+font-size: 50px;
+
+
+}
+.main-description{
+
+       font-size: 22px;
+       color: rgba(0, 0, 0, 0.5);
+}
+
+.main-manager-2 li{
+    list-style: none;
+}
+.main-manager-2{
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 40px;
+    margin-left:150px;
+    margin-right: 150px;
+    text-align: center;
+    
+    
+}
+.card{
+
+    padding: 5px;
+    
+}
+.card-section-1{
+
+font-size: 22px;
+width: 132px;
+height: 16px;
+color: #111111;
+padding-left: 69px;
+padding-right: 69px;
+
+
+}
+.card-section-2{
+
+    width: 81px;
+    height: 16px;
+    font-size: 22px;
+    color: #111111;
+    padding-right: 94.5px;
+    padding-left: 94.5px ;
+}
+.card-section-3{
+
+     font-size: 16px;
+     color: #ffff;
+     background-color: #E95A08;
+     padding: 19px 80px;
+     border: none;
+}
+
+/* main section 2 related styles */
+.main-manager-3{
+    display: flex;
+    column-gap: 60px;
+    margin-right: 150px;
+    margin-left: 150px;
+}
+.section-1{
+
+    position:relative;
+}
+
+
+.section-image-2{
+
+    width: 540px;
+    height: 597px;
+    margin-top: 199px;
+   
+    
+
+}
+.section-image-1{
+
+width: 286px;
+height: 286px;
+background-image: none;
+position: absolute;
+top: 50px;
+right:  -120px;
+}
+.section-2{
+
+       margin-top: 200px;
+       
+       
+       
+}
+.section-2-title{
+
+    
+    font-size: 50px;
+    
+     
+}
+.section-description{
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.5);
+
+
+}
+.section-description li{
+    padding-bottom: 20px;
+}
+.main-manager-3 section-2{
+   padding-top: 38px;
+   padding-bottom: 38px;
+}
+/* responsive related styles */
+@media screen and (max-width: 576px) {
+
+.header-boss,
+.menu-manager,
+.banner-boss{
+    flex-direction: column;
+    
+    
+   }
+.header-boss{
+    justify-content: none;
+    margin-left: 10px;
+    
+}
+.banner-boss{
+    flex-direction: column-reverse;
+    margin-left: 0px;
+    position: relative;
+    
+}
+.banner-image{
+    width: 350px;
+    height: 200px;
+}
+.banner-section-1{
+    position: absolute;
+    left: 20px;
+    top: 200px;
+    
+}
+.banner-title{
+    font-size: 39.5px;
+}
+.banner-description{
+    font-size: 10px;
+}
+/* main related responce */
+.main-boss{
+    position: relative;
+}
+
+.main-manager-2{
+    grid-template-columns: repeat(1,1fr);
+    position: absolute ;
+    top:350px;
+    left: -130px;
+    
+}
+
+.main-manager-1{
+
+    position: absolute;
+    left: -550px;
+ } 
+ .main-title{
+    font-size: 39px;
+    
+ }
+ .main-description{
+    font-size: 7px;
+} 
+.main-manager-3{
+    position: absolute;
+    top: 5100px;
+    left: -130px;
+    flex-direction: column;
+}
+.section-image-2{
+ width: 280px;
+ height: 500px;
+}
+.section-image-1{
+
+   width: 100px;
+   height: 100px;
+   top: 150px;
+   left: 210px;
+
+}
+.section-2{
+    position: absolute;
+    top: 500px;
+}
+.section-2-title{
+    font-size: 30px;
+}
+}
+
+  
